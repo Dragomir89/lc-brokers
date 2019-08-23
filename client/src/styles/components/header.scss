@@ -1,0 +1,15 @@
+.header {
+    background-color: $dark-blue;
+    padding: $m-size 0rem;
+}
+.header-layout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: $m-size;
+}

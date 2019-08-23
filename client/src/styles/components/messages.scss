@@ -1,0 +1,11 @@
+.messages__success-request {
+    color: $wite-blue;
+    font-size: $s-size;
+}
+
+.messages__fail-request {
+    text-align: center;
+    color: red;
+    font-size: $s-size;
+    font-style: italic;
+}

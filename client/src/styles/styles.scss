@@ -1,0 +1,18 @@
+@import './base/settings.scss';
+@import './base/base.scss';
+@import './components/content-container.scss';
+@import './components/header.scss';
+@import './components/form-components.scss';
+@import './components/button.scss';
+@import './components/titles.scss';
+@import './components/modal.scss';
+@import './components/messages';
+
+.DateInput_input{
+    padding: 3px 11px 6px;
+    border: 1px solid $wite-blue;
+}
+
+.DateInput {
+    width: 100%;
+}

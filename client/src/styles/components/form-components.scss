@@ -1,0 +1,50 @@
+.form-components__label {
+    font-size: $s-size;
+    color: $dark-blue;
+    margin-bottom: $ss-size;
+    
+}
+
+.form-components__wrapper {
+    margin: $s-size 0;
+}
+
+.form-components__input {
+    color: $dark-blue;
+    border: 1px solid $wite-blue;
+    border-radius: 3px;
+    padding: $ss-size;
+    width: 100%;
+    font-size: $s-size;
+}
+
+.DateInput_input{
+    padding: 3px 11px 6px;
+    border: 1px solid $wite-blue;
+}
+
+.DateInput {
+    width: 100%;
+}
+.SingleDatePicker {
+    width: 100%;
+}
+.SingleDatePickerInput {
+    width: 100%;
+}
+.DateInput_1 {
+    width: 100%;
+}
+
+.form__add-offer-layout {
+    display: flex;
+    justify-content: space-between;
+}
+.form__add-offer-section {
+    width: 47%;
+}
+
+.form__textarea {
+    height: 113px;
+    font-size: $s-size;
+}

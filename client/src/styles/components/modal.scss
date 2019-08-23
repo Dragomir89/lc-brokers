@@ -1,0 +1,62 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  opacity: 1 !important;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0 !important;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  width: 600px;
+  border: 1px solid $grey;
+  border-radius: 5px;
+  padding: $s-size;
+}
+
+.model__test-style {
+    margin-top: $l-size;
+    font-size: $s-size;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.modal__info-position {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $wite-blue;
+    border-radius: 3px;
+    margin-bottom: $s-size;
+    p {
+        padding: 3px;
+        margin: 0px;
+    }
+}
+.modal__info-position-danger {
+    @extend .modal__info-position;
+    border: 1px solid red;
+}
+// ekselska tablica
+// diploma
+// trudova kni6ka po stranici
+// za dogovora
+
+// li4na karta

@@ -1,0 +1,3 @@
+export const GET_OFFERS = 'GET_OFFERS';
+export const POST_OFFER_SUCCESS = 'POST_OFFER_SUCCESS';
+export const POST_OFFER_ERROR = 'POST_OFFER_ERROR';
