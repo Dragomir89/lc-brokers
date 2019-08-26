@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OfferBlock = ({ address, price, area, floor, neighborhood, estateType, _id }) => {
-   
+
     return (
         <div className='content-container__offer-wrapper'>
             <div >
@@ -32,9 +33,11 @@ const OfferBlock = ({ address, price, area, floor, neighborhood, estateType, _id
                     Цена: {price} евро
                     </div>
                 <div className='button__offer-details-position'>
-                    <button className='button__offer-details'>
-                        Виж Детайли
+                    <Link to={`/edit-offer/${_id}`}>
+                        <button className='button__offer-details'>
+                            Виж Детайли
                         </button>
+                    </Link>
                 </div>
             </div>
         </div>

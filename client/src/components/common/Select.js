@@ -1,7 +1,19 @@
 import React from 'react';
 const Select = ({ options = [], label, name, changeFn, selectedOptionId }) => {
-    const defaultValue = selectedOptionId ? selectedOptionId : '';
+    // const defaultValue = selectedOptionId ? selectedOptionId : '';
+
+
     options = options.map((option) => {
+        if(option._id === selectedOptionId) {
+            return(
+                <option
+                    selected
+                    key={option._id}
+                    value={option._id}>
+                    {option.value}
+                </option>)
+        }
+
         return (
             <option
                 key={option._id}
@@ -16,7 +28,7 @@ const Select = ({ options = [], label, name, changeFn, selectedOptionId }) => {
             </div>
             <div>
                 <select
-                    defaultValue={defaultValue}
+                    // defaultValue={defaultValue}
                     onChange={changeFn}
                     name={name}
                     className='form-components__input'>

@@ -1,9 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Modal from 'react-modal';
 import AddOfferLineInfo from './AddOfferLineInfo';
-import { POST_OFFER_ERROR, POST_OFFER_SUCCESS } from '../../actions/offerActionTypes';
+import { POST_OFFER_ERROR } from '../../actions/offerActionTypes';
+import { postOffer } from '../../actions/offerActions';
 
-const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, saveOfferHandler }) => {
+const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => {
 
     const {
         constructionType,
@@ -27,11 +29,16 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, saveOfferHandler
     const showReqMessage = () => {
         let message = ''
         if (offerPostStatus) {
-            message = offerPostStatus === POST_OFFER_ERROR ? 
-                (<p className='messages__fail-request'>! Офертата не беше качена !</p>) : 
+            message = offerPostStatus === POST_OFFER_ERROR ?
+                (<p className='messages__fail-request'>! Офертата не беше качена !</p>) :
                 (<p className='messages__success-request'>Добавихте офертата успешно</p>);
         }
         return message;
+    }
+
+    const saveOfferHandler = () => { /// REMOVE !!!!!
+        const { nextCall, lastCall } = offerVlues;
+        postOffer({ ...offerVlues, lastCall: lastCall.toISOString(), nextCall: nextCall.toISOString() });
     }
 
     return (
@@ -81,7 +88,7 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, saveOfferHandler
                         onClick={saveOfferHandler}
                         className='button__danger button__offer-details-position'>
                         Запази офертата !
-                </button>
+                    </button>
                 </div>
             </div>
 
@@ -90,4 +97,6 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, saveOfferHandler
 
 }
 
-export default AddOfferModal;
+const actions = { postOffer };
+
+export default connect(null, actions)(AddOfferModal);

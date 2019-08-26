@@ -203,6 +203,63 @@ module.exports = (app) =>{
         })
     })
 
+    app.post('/api/offer/:id', (req, res) => {
+        console.log('============== UPDATE =================')
+        console.log(req.body)
+        
+        const {phoneNumber, phoneNumber2, phoneNumber3 } = req.body
+        let phoneNumbers = []
+        phoneNumbers.push(phoneNumber)
+        phoneNumber2 ? phoneNumbers.push(phoneNumber2) : false
+        phoneNumber3 ? phoneNumbers.push(phoneNumber3) : false
+
+        const {area, description, price, address, info, propertyOwnerName,
+            floor, constructionTypeId, propertyTypeId, state, neighborhoodId} = req.body
+        
+        const lastCall = new Date(req.body.lastCall) === 'Invalid Date'? new Date() : new Date(req.body.lastCall)
+        const nextCall = new Date(req.body.nextCall) === 'Invalid Date'? new Date() : new Date(req.body.nextCall)
+
+        const updatedOffer = {
+            area,
+            description,
+            phoneNumber,
+            phoneNumbers,
+            price,
+            address,
+            info,
+            propertyOwnerName,
+            floor,
+            constructionTypeId,
+            propertyTypeId,
+            state,
+            neighborhoodId,
+            lastCall,
+            nextCall   
+        }
+
+
+        Offer.findOneAndUpdate(
+            {_id:req.params.id}, updatedOffer).then((oldOffer)=>{
+
+            if(req.body.changedPhones && req.body.changedPhones.length > 0){
+                console.log("changedPhones -- REQUEST")
+                console.log(req.body.changedPhones)
+                updatePhones(req.body.changedPhones, req.params.id).then((phonesRes)=>{
+                    console.log('phonesRes --- >')
+                    console.log(phonesRes)
+                    res.send(updatedOffer)
+                })
+                
+            }else{
+                console.log('There is not updated Phones !!!')
+                res.send(updatedOffer)
+            }
+            
+        }).catch((error)=>{
+            res.send({error})
+        })
+    })
+
     app.post('/api/offer',(req, res)=>{
         console.log('/api/post-offer')
 

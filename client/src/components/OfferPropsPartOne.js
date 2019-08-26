@@ -6,9 +6,6 @@ import { connect } from 'react-redux';
 import { getOptions } from '../actions/optionsActions';
 
 class OfferPropsPartOne extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     componentDidMount () {
         this.props.getOptions()

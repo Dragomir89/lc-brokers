@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import OfferPropsPartOne from './OfferPropsPartOne';
 import OfferPropsPartTwo from './OfferPropsPartTwo';
 import moment from 'moment';
-import AddOfferModal from './modals/AddOfferModal';
 import { POST_OFFER_SUCCESS, POST_OFFER_ERROR } from '../actions/offerActionTypes';
-import { postOffer } from '../actions/offerActions';
+import { postOffer, getCurrentOffer } from '../actions/offerActions';
+import EditOfferModal from './modals/EditOfferModal';
 
-class AddOfferPage extends Component {
+class EditOfferPage extends Component {
     constructor(props) {
         super(props);
         this.defaultState = {
@@ -39,18 +39,28 @@ class AddOfferPage extends Component {
         this.state = { ...this.defaultState };
     }
 
+    componentDidMount () {
+        const { id } = this.props.match.params;
+        this.props.getCurrentOffer(id);
+    }
 
-    componentWillReceiveProps (newProps) {
+    checkForCurrentOffer = (newProps) => {
+        if (newProps.editOffer) {
+            this.setState(() => ({ ...newProps.editOffer }));
+        }
+    }
+
+    handleRequiestStatus = (newProps) => {
         if (newProps.offerPostStatus === POST_OFFER_SUCCESS) { /// to be fixed
             this.setState(() => ({ showAddOfferModal: false }));
-             //// I use setTimeout because I'd like furstable close the modal and then restart the form
-            setTimeout(() => {
-                this.setState(() => ({ ...this.defaultState }));
-            }, 600);
         } else if (newProps.offerPostStatus === POST_OFFER_ERROR) {
             this.setState(() => ({ offerPostStatus: POST_OFFER_ERROR }));
         }
+    }
 
+    componentWillReceiveProps (newProps) {
+        this.checkForCurrentOffer(newProps);
+        this.handleRequiestStatus(newProps);
     }
 
     selectedSetSelectedTextValues = (e, name) => {
@@ -69,7 +79,7 @@ class AddOfferPage extends Component {
                 this.setState(() => ({ neighborhood: value }));
             }
         }
-        
+
     }
 
     changeHandler = (e) => {
@@ -95,15 +105,7 @@ class AddOfferPage extends Component {
 
     closeHandlerModal = () => { this.setState(() => ({ showAddOfferModal: false })); }
 
-    saveOfferHandler = () => {
-        const { nextCall, lastCall } = this.state;
-        this.props.postOffer({ 
-            ...this.state, 
-            lastCall: lastCall.toISOString(), 
-            nextCall: nextCall.toISOString() });
-    }
     render () {
-        console.log('test')
         return (
             <div className='content-container'>
                 <h1 className='title__page'>Добави оферта</h1>
@@ -124,21 +126,23 @@ class AddOfferPage extends Component {
                                 checkOfferHandler={this.checkOfferHandler} />)
                     }
                 </form>
-                <AddOfferModal
+                <EditOfferModal
                     isOpen={this.state.showAddOfferModal}
                     offerVlues={this.state}
                     closeHandlerModal={this.closeHandlerModal}
                     saveOfferHandler={this.saveOfferHandler}
                 />
+
             </div>
         )
     }
 }
 const mapStateToProps = (state) => {
-    console.log('mapStateToProps')
-    console.log(state.offerPostStatus)
-    return { offerPostStatus: state.offerPostStatus }
+    return {
+        offerPostStatus: state.offerPostStatus,
+        editOffer: state.editOffer
+    }
 }
-const actions = { postOffer }
+const actions = { postOffer, getCurrentOffer }
 
-export default connect(mapStateToProps, actions)(AddOfferPage);
+export default connect(mapStateToProps, actions)(EditOfferPage);

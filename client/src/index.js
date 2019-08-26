@@ -11,11 +11,13 @@ import reduxThunk from 'redux-thunk';
 import offersReducer from './reducers/offersReducer';
 import optionsReducer from './reducers/otionsReducer';
 import offerPostStatusReducer from './reducers/offerPostStatusReducer';
+import editOfferReducer from './reducers/editOfferReducer';
 
 const reducers = combineReducers({
     offers: offersReducer, 
     options: optionsReducer,
-    offerPostStatus: offerPostStatusReducer
+    offerPostStatus: offerPostStatusReducer,
+    editOffer: editOfferReducer
 });
 
 const store = createStore(reducers, (applyMiddleware(reduxThunk)));
