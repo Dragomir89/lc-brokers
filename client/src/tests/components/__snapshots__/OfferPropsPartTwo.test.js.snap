@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render OfferPropsPartTwo correct 1`] = `
+<div>
+  <div
+    className="form__add-offer-layout"
+  >
+    <div
+      className="form__add-offer-section"
+    >
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Номер На Оферта"
+        name="number"
+        placeholder="123456 ..."
+        value={1}
+      />
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Адрес"
+        name="address"
+        placeholder="Улица, номер, етаж ..."
+        value="test address"
+      />
+      <TextArea
+        changeFn={[MockFunction]}
+        label="Долълнително Инфо"
+        name="info"
+        placeholder="Инфо ..."
+        value="test info"
+      />
+      <CustomSingleDatePicker
+        date={"1970-01-01T00:00:00.000Z"}
+        label="Предишно обаждане"
+        numberOfMonths={1}
+        onDateChange={[MockFunction]}
+      />
+    </div>
+    <div
+      className="form__add-offer-section"
+    >
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Име на Собственик"
+        name="propertyOwnerName"
+        placeholder="Любомир Петров ..."
+        value="Ivan"
+      />
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Тлефон Главен"
+        name="phoneNumber"
+        placeholder="889358720"
+        value="088934567"
+      />
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Тлефон 2"
+        name="phoneNumber2"
+        placeholder="Не е задължителен"
+        value="088934568"
+      />
+      <TextInput
+        changeFn={[MockFunction]}
+        label="Тлефон 3"
+        name="phoneNumber3"
+        placeholder="Не е задължителен"
+        value="088934569"
+      />
+      <CustomSingleDatePicker
+        date={"1970-01-01T00:00:00.000Z"}
+        label="Следващо обаждане"
+        numberOfMonths={1}
+        onDateChange={[MockFunction]}
+      />
+    </div>
+  </div>
+  <div
+    className="button__relative-wrapper"
+  >
+    <button
+      className="button__success"
+      onClick={[Function]}
+    >
+      Назад
+    </button>
+    <button
+      className="button__primary button__offer-details-position"
+      onClick={[Function]}
+    >
+      Преглед на офертата
+    </button>
+  </div>
+</div>
+`;

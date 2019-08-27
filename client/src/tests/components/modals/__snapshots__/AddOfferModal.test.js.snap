@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call postOffer with correct values 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={500}
+  contentLabel="first modal"
+  isOpen={false}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h1
+    className="title__offer title__center"
+  >
+    Искате ли да запазите тази оферта ?
+  </h1>
+  <div
+    className="model__test-style content-container__offer-modal"
+  >
+    <AddOfferLineInfo
+      label="Строителство"
+      value="НОВО"
+    />
+    <AddOfferLineInfo
+      label="Вид Имот"
+      value="ЧЕТЕРИСТАЕН"
+    />
+    <AddOfferLineInfo
+      label="Състояние"
+      value="НАЕТ"
+    />
+    <AddOfferLineInfo
+      label="Квартал"
+      value="ЛОЗЕНЕЦ"
+    />
+    <AddOfferLineInfo
+      dimension="евро"
+      label="Цена"
+      value={400}
+    />
+    <AddOfferLineInfo
+      dimension="кв/м"
+      label="Квадратура"
+      value={40}
+    />
+    <AddOfferLineInfo
+      label="Описание"
+      value=""
+    />
+    <AddOfferLineInfo
+      label="Номер На Оферта"
+      value={1}
+    />
+    <AddOfferLineInfo
+      label="Адрес"
+      value="UPDATE_0001"
+    />
+    <AddOfferLineInfo
+      dimension=" ет"
+      label="Етаж"
+      value={6}
+    />
+    <AddOfferLineInfo
+      label="Собственик"
+      value="тест"
+    />
+    <AddOfferLineInfo
+      label="Главен Тлефон"
+      value="1111"
+    />
+    <AddOfferLineInfo
+      label="Тлефон 2"
+    />
+    <AddOfferLineInfo
+      label="Тлефон 3"
+    />
+    <AddOfferLineInfo
+      label="Последно обаждане"
+      value="10/09/2018"
+    />
+    <AddOfferLineInfo
+      label="Следващо обаждане"
+      value="10/09/2018"
+    />
+    <div />
+    <div
+      className="button__relative-wrapper"
+    >
+      <button
+        className="button__success"
+      >
+        Назад
+      </button>
+      <button
+        className="button__danger button__offer-details-position"
+        onClick={[Function]}
+      >
+        Запази офертата !
+      </button>
+    </div>
+  </div>
+</Modal>
+`;
+
+exports[`should call postOffer with error message values 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={500}
+  contentLabel="first modal"
+  isOpen={false}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h1
+    className="title__offer title__center"
+  >
+    Искате ли да запазите тази оферта ?
+  </h1>
+  <div
+    className="model__test-style content-container__offer-modal"
+  >
+    <AddOfferLineInfo
+      label="Строителство"
+      value="НОВО"
+    />
+    <AddOfferLineInfo
+      label="Вид Имот"
+      value="ЧЕТЕРИСТАЕН"
+    />
+    <AddOfferLineInfo
+      label="Състояние"
+      value="НАЕТ"
+    />
+    <AddOfferLineInfo
+      label="Квартал"
+      value="ЛОЗЕНЕЦ"
+    />
+    <AddOfferLineInfo
+      dimension="евро"
+      label="Цена"
+      value={400}
+    />
+    <AddOfferLineInfo
+      dimension="кв/м"
+      label="Квадратура"
+      value={40}
+    />
+    <AddOfferLineInfo
+      label="Описание"
+      value=""
+    />
+    <AddOfferLineInfo
+      label="Номер На Оферта"
+      value={1}
+    />
+    <AddOfferLineInfo
+      label="Адрес"
+      value="UPDATE_0001"
+    />
+    <AddOfferLineInfo
+      dimension=" ет"
+      label="Етаж"
+      value={6}
+    />
+    <AddOfferLineInfo
+      label="Собственик"
+      value="тест"
+    />
+    <AddOfferLineInfo
+      label="Главен Тлефон"
+      value="1111"
+    />
+    <AddOfferLineInfo
+      label="Тлефон 2"
+    />
+    <AddOfferLineInfo
+      label="Тлефон 3"
+    />
+    <AddOfferLineInfo
+      label="Последно обаждане"
+      value="10/09/2018"
+    />
+    <AddOfferLineInfo
+      label="Следващо обаждане"
+      value="10/09/2018"
+    />
+    <div>
+      <p
+        className="messages__fail-request"
+      >
+        ! Офертата не беше качена !
+      </p>
+    </div>
+    <div
+      className="button__relative-wrapper"
+    >
+      <button
+        className="button__success"
+      >
+        Назад
+      </button>
+      <button
+        className="button__danger button__offer-details-position"
+        onClick={[Function]}
+      >
+        Запази офертата !
+      </button>
+    </div>
+  </div>
+</Modal>
+`;

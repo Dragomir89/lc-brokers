@@ -1,8 +1,5 @@
 import React from 'react';
 const Select = ({ options = [], label, name, changeFn, selectedOptionId }) => {
-    // const defaultValue = selectedOptionId ? selectedOptionId : '';
-
-
     options = options.map((option) => {
         if(option._id === selectedOptionId) {
             return(

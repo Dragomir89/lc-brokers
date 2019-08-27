@@ -3,7 +3,7 @@ import TextInput from './common/TextInput';
 import TextArea from './common/TextArea';
 import CustomSingleDatePicker from './common/SingleDatePicher';
 
-const OfferPropsPartTwo = (
+export const OfferPropsPartTwo = (
     { changeHandler, backHandler, checkOfferHandler, values, prevCallChangeHandler,nextCallChangeHandler }) => {
     
     const { number, address, info, propertyOwnerName } = values;

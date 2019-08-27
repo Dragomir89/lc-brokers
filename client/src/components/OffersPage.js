@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getOffers } from '../actions/offerActions';
 import Filters from './Filters';
 
-class OffersPage extends Component {
+export class OffersPage extends Component {
 
     render () {        
         const offers = this.props.offers.map(offer => (<OfferBlok key={offer._id} {...offer} />));

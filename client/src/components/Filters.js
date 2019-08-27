@@ -8,7 +8,7 @@ import { getOptions } from '../actions/optionsActions';
 import { getOffers } from '../actions/offerActions';
 import CustomSingleDatePicker from './common/SingleDatePicher';
 
-class Filters extends React.Component {
+export class Filters extends React.Component {
     state = {
         focused: false,
         phoneNumber: '',

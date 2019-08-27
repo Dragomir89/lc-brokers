@@ -5,10 +5,10 @@ import TextInput from './common/TextInput';
 import { connect } from 'react-redux';
 import { getOptions } from '../actions/optionsActions';
 
-class OfferPropsPartOne extends React.Component {
+export class OfferPropsPartOne extends React.Component {
 
     componentDidMount () {
-        this.props.getOptions()
+        this.props.getOptions();
     }
 
     render () {

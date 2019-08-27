@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render OffersPage correctly 1`] = `
+<div
+  className="content-container"
+>
+  <Connect(Filters) />
+  <div>
+    <h1
+      className="title__page"
+    >
+      Оферти
+    </h1>
+    <OfferBlock
+      __v={0}
+      _id="5bbcb3cc2a05d4701402868b"
+      addedFrom={null}
+      addedOn="2018-10-09T13:57:31.951Z"
+      address="UPDATE_0001"
+      area={40}
+      constructionTypeId={
+        Object {
+          "__v": 0,
+          "_id": "5b8938ee4ddb4d0cec841765",
+          "value": "НОВО",
+        }
+      }
+      deletedOn="2019-05-01T11:02:50.091Z"
+      description=""
+      floor={6}
+      info=""
+      isDeleted={false}
+      key="5bbcb3cc2a05d4701402868b"
+      lastCall="2018-10-09T13:57:31.951Z"
+      neighborhoodId={
+        Object {
+          "__v": 0,
+          "_id": "5b1a81947561bd1310b9b249",
+          "value": "ЛОЗЕНЕЦ",
+        }
+      }
+      nextCall="2018-10-09T13:57:31.951Z"
+      number={1}
+      phoneNumber="1111"
+      phoneNumbers={
+        Array [
+          "1111",
+          "2222",
+          "3333",
+        ]
+      }
+      price={400}
+      propertyOwnerName="тест"
+      propertyTypeId={
+        Object {
+          "__v": 0,
+          "_id": "5b73dbbc629e121768144d6b",
+          "value": "ЧЕТЕРИСТАЕН",
+        }
+      }
+      state={
+        Object {
+          "__v": 0,
+          "_id": "5b1a81797561bd1310b9b244",
+          "value": "НАЕТ",
+        }
+      }
+    />
+    <OfferBlock
+      __v={0}
+      _id="5cc94d8a776b203dfc2720ca"
+      addedFrom={null}
+      addedOn="2019-05-01T07:40:55.711Z"
+      address="test test"
+      area={123}
+      constructionTypeId={
+        Object {
+          "__v": 0,
+          "_id": "5b8939094ddb4d0cec841769",
+          "value": "ТУХЛА",
+        }
+      }
+      deletedOn="2019-05-01T08:49:12.345Z"
+      description="test"
+      floor={8}
+      info="test info
+"
+      isDeleted={false}
+      key="5cc94d8a776b203dfc2720ca"
+      lastCall="2019-05-01T07:40:55.711Z"
+      neighborhoodId={
+        Object {
+          "__v": 0,
+          "_id": "5b73dbbc629e121768144d6c",
+          "value": "ИВАН ВАЗООВ",
+        }
+      }
+      nextCall="2019-05-01T07:40:55.711Z"
+      number={123321}
+      phoneNumber="56789"
+      phoneNumbers={
+        Array [
+          "56789",
+          "098765",
+        ]
+      }
+      price={100}
+      propertyOwnerName="owner"
+      propertyTypeId={
+        Object {
+          "__v": 0,
+          "_id": "5b73e2c8ead7291d20256485",
+          "value": "МЕЗОНЕТ",
+        }
+      }
+      state={
+        Object {
+          "__v": 0,
+          "_id": "5bab632fd29aaf428ce3d54b",
+          "value": "TEST",
+        }
+      }
+    />
+     
+  </div>
+</div>
+`;
+
+exports[`should render OffersPage correctly without offers 1`] = `
+<div
+  className="content-container"
+>
+  <Connect(Filters) />
+</div>
+`;

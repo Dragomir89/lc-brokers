@@ -6,7 +6,10 @@ const OfferBlock = ({ address, price, area, floor, neighborhood, estateType, _id
     return (
         <div className='content-container__offer-wrapper'>
             <div >
-                <img height='180px' src='https://t-ec.bstatic.com/images/hotel/max1024x768/137/137238081.jpg' />
+                <img
+                    height='180px'
+                    alt='estate'
+                    src='https://t-ec.bstatic.com/images/hotel/max1024x768/137/137238081.jpg' />
             </div>
             <div style={
                 {

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddOptions component correctly 1`] = `
+<div
+  className="content-container"
+>
+  <h1
+    className="title__page"
+  >
+    Добвавете опции за офертите
+  </h1>
+  <form>
+    <TextInput
+      changeFn={[Function]}
+      label="Вид Стоителство"
+      name="constructionType"
+      placeholder="старо, ново, ЕПК ..."
+      value=""
+    />
+    <TextInput
+      changeFn={[Function]}
+      label="Вид Имот"
+      name="estateType"
+      placeholder="едностаен, двустаен, къща ..."
+      value=""
+    />
+    <TextInput
+      changeFn={[Function]}
+      label="Състояние"
+      name="state"
+      placeholder="нает, свободен ..."
+      value=""
+    />
+    <TextInput
+      changeFn={[Function]}
+      label="Квартал"
+      name="neighborhood"
+      placeholder="лозенец, цетър, стрелбище ..."
+      value=""
+    />
+    <button
+      className="button__primary"
+      onClick={[Function]}
+    >
+      Запази
+    </button>
+  </form>
+</div>
+`;

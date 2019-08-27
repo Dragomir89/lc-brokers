@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshots correctly 1`] = `
+<div
+  className="content-container"
+>
+  <h1
+    className="title__page"
+  >
+    Добави оферта
+  </h1>
+  <form>
+    <Connect(OfferPropsPartOne)
+      changeHandler={[Function]}
+      id="part-one"
+      nextHandler={[Function]}
+      values={
+        Object {
+          "address": "",
+          "area": "",
+          "constructionType": "",
+          "constructionTypeId": "",
+          "description": "",
+          "floor": "",
+          "info": "",
+          "lastCall": "1970-01-01T00:00:00.000Z",
+          "neighborhood": "",
+          "neighborhoodId": "",
+          "nextCall": "1970-01-01T00:00:00.000Z",
+          "number": "",
+          "offerPostStatus": "",
+          "phoneNumber": "",
+          "phoneNumber2": "",
+          "phoneNumber3": "",
+          "price": "",
+          "propertyOwnerName": "",
+          "propertyType": "",
+          "propertyTypeId": "",
+          "showAddOfferModal": false,
+          "showFierstPart": true,
+          "state": "",
+          "stateVal": "",
+        }
+      }
+    />
+  </form>
+  <Connect(AddOfferModal)
+    closeHandlerModal={[Function]}
+    isOpen={false}
+    offerVlues={
+      Object {
+        "address": "",
+        "area": "",
+        "constructionType": "",
+        "constructionTypeId": "",
+        "description": "",
+        "floor": "",
+        "info": "",
+        "lastCall": "1970-01-01T00:00:00.000Z",
+        "neighborhood": "",
+        "neighborhoodId": "",
+        "nextCall": "1970-01-01T00:00:00.000Z",
+        "number": "",
+        "offerPostStatus": "",
+        "phoneNumber": "",
+        "phoneNumber2": "",
+        "phoneNumber3": "",
+        "price": "",
+        "propertyOwnerName": "",
+        "propertyType": "",
+        "propertyTypeId": "",
+        "showAddOfferModal": false,
+        "showFierstPart": true,
+        "state": "",
+        "stateVal": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`should match snapshots correctly 2`] = `
+<div
+  className="content-container"
+>
+  <h1
+    className="title__page"
+  >
+    Добави оферта
+  </h1>
+  <form>
+    <OfferPropsPartTwo
+      backHandler={[Function]}
+      changeHandler={[Function]}
+      checkOfferHandler={[Function]}
+      id="part-two"
+      nextCallChangeHandler={[Function]}
+      prevCallChangeHandler={[Function]}
+      values={
+        Object {
+          "address": "",
+          "area": "",
+          "constructionType": "",
+          "constructionTypeId": "",
+          "description": "",
+          "floor": "",
+          "info": "",
+          "lastCall": "1970-01-01T00:00:00.000Z",
+          "neighborhood": "",
+          "neighborhoodId": "",
+          "nextCall": "1970-01-01T00:00:00.000Z",
+          "number": "",
+          "offerPostStatus": "",
+          "phoneNumber": "",
+          "phoneNumber2": "",
+          "phoneNumber3": "",
+          "price": "",
+          "propertyOwnerName": "",
+          "propertyType": "",
+          "propertyTypeId": "",
+          "showAddOfferModal": false,
+          "showFierstPart": false,
+          "state": "",
+          "stateVal": "",
+        }
+      }
+    />
+  </form>
+  <Connect(AddOfferModal)
+    closeHandlerModal={[Function]}
+    isOpen={false}
+    offerVlues={
+      Object {
+        "address": "",
+        "area": "",
+        "constructionType": "",
+        "constructionTypeId": "",
+        "description": "",
+        "floor": "",
+        "info": "",
+        "lastCall": "1970-01-01T00:00:00.000Z",
+        "neighborhood": "",
+        "neighborhoodId": "",
+        "nextCall": "1970-01-01T00:00:00.000Z",
+        "number": "",
+        "offerPostStatus": "",
+        "phoneNumber": "",
+        "phoneNumber2": "",
+        "phoneNumber3": "",
+        "price": "",
+        "propertyOwnerName": "",
+        "propertyType": "",
+        "propertyTypeId": "",
+        "showAddOfferModal": false,
+        "showFierstPart": false,
+        "state": "",
+        "stateVal": "",
+      }
+    }
+  />
+</div>
+`;

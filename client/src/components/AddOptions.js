@@ -19,7 +19,6 @@ class AddOpitonsPage extends Component {
 
     handleClick = (e) => {
         e.preventDefault();
-        console.log(this.state);
         this.setState(() => {
             return  {
                 constructionType: '',
@@ -39,7 +38,8 @@ class AddOpitonsPage extends Component {
                         value={this.state.constructionType}
                         label='Вид Стоителство'
                         name='constructionType'
-                        placeholder='старо, ново, ЕПК ...' changeFn={this.changeFn} />
+                        placeholder='старо, ново, ЕПК ...' 
+                        changeFn={this.changeFn} />
                     <TextInput
                         value={this.state.estateType}
                         label='Вид Имот'

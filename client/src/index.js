@@ -9,7 +9,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
 import offersReducer from './reducers/offersReducer';
-import optionsReducer from './reducers/otionsReducer';
+import optionsReducer from './reducers/optionsReducer';
 import offerPostStatusReducer from './reducers/offerPostStatusReducer';
 import editOfferReducer from './reducers/editOfferReducer';
 

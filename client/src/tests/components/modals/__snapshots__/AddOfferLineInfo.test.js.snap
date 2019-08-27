@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correct info width data 1`] = `
+<div
+  className="modal__info-position"
+>
+  <p>
+    Цена
+    : 
+  </p>
+  <p>
+    200 лв
+  </p>
+</div>
+`;
+
+exports[`should render correct info widthout value 1`] = `
+<div
+  className="modal__info-position-danger"
+>
+  <p>
+    Цена
+    : 
+  </p>
+  <p>
+    -- няма стойност --
+  </p>
+</div>
+`;

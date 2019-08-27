@@ -7,7 +7,7 @@ const defaultState = {
 }
 export default (state=defaultState, action) => {
     if(action.type === GET_OPTIONS) {
-        return action.payload;
+        return {...action.payload};
     }
     return state;
 };

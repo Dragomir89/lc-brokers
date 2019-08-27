@@ -2,7 +2,9 @@ import { GET_OFFERS, POST_OFFER_SUCCESS, POST_OFFER_ERROR, GET_CURRENT_OFFER } f
 import axios from 'axios';
 
 export const getOffers = (page, queryStr) => async (dispath) => {
-    const res = await axios.get(`http://localhost:5000/api/get-offers/${page}?${queryStr}`);
+    let res = await axios.get(`http://localhost:5000/api/get-offers/${page}?${queryStr}`);
+    res = res || [];
+    // return { type: GET_OFFERS, payload: res.data.offers }
     return dispath({ type: GET_OFFERS, payload: res.data.offers });
 }
 

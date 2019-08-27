@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Filters correct 1`] = `
+<form>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <Select
+        changeFn={[Function]}
+        label="Строителство"
+        name="constructionTypeId"
+        options={
+          Array [
+            Object {
+              "__v": 0,
+              "_id": "5b8938ee4ddb4d0cec841765",
+              "value": "НОВО",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b8938f54ddb4d0cec841766",
+              "value": "СТАРО",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b8938fa4ddb4d0cec841767",
+              "value": "ПАНЕЛ",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b8938fe4ddb4d0cec841768",
+              "value": "ЕПК",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b8939094ddb4d0cec841769",
+              "value": "ТУХЛА",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5bab632fd29aaf428ce3d549",
+              "value": "TEST",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5c096d11f0b6b4071c4dfd4e",
+              "value": "dasda",
+            },
+          ]
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <Select
+        changeFn={[Function]}
+        label="Вид Имот"
+        name="propertyTypeId"
+        options={
+          Array [
+            Object {
+              "__v": 0,
+              "_id": "5b1a81797561bd1310b9b243",
+              "value": "ЕДНОСТАЕН",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b1a81947561bd1310b9b247",
+              "value": "ДВУСТАЕН",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b73dbbc629e121768144d6b",
+              "value": "ЧЕТЕРИСТАЕН",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b73e2c8ead7291d20256485",
+              "value": "МЕЗОНЕТ",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5bab632fd29aaf428ce3d54a",
+              "value": "TEST",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5c096d11f0b6b4071c4dfd4f",
+              "value": "sdasd",
+            },
+          ]
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <Select
+        changeFn={[Function]}
+        label="Състояние"
+        name="state"
+        options={
+          Array [
+            Object {
+              "__v": 0,
+              "_id": "5b1a81797561bd1310b9b244",
+              "value": "НАЕТ",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b1a81c87561bd1310b9b24a",
+              "value": "СВОБОДЕН",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5bab632fd29aaf428ce3d54b",
+              "value": "TEST",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5c096d11f0b6b4071c4dfd50",
+              "value": "dasdas",
+            },
+          ]
+        }
+        placeholder="Телефон"
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <Select
+        changeFn={[Function]}
+        label="Квартал"
+        name="neighborhoodId"
+        options={
+          Array [
+            Object {
+              "__v": 0,
+              "_id": "5b1a81797561bd1310b9b245",
+              "value": "ЦЕНТЪР",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b1a81947561bd1310b9b249",
+              "value": "ЛОЗЕНЕЦ",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b73dbbc629e121768144d6c",
+              "value": "ИВАН ВАЗООВ",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5b73e2c8ead7291d20256486",
+              "value": "Стрелбище",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5bab632fd29aaf428ce3d54c",
+              "value": "TEST",
+            },
+            Object {
+              "__v": 0,
+              "_id": "5c096d11f0b6b4071c4dfd51",
+              "value": "dasdas",
+            },
+          ]
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <CustomSingleDatePicker
+        date={"1970-01-01T00:00:00.000Z"}
+        focused={false}
+        label="Следващо обаждане"
+        numberOfMonths={1}
+        onDateChange={[Function]}
+        onFocusChange={[Function]}
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "width": "25%",
+        }
+      }
+    >
+      <TextInput
+        changeFn={[Function]}
+        label="Телефон"
+        name="phoneNumber"
+        placeholder="Телефон"
+        value=""
+      />
+    </div>
+  </div>
+  <button
+    className="button__primary"
+    onClick={[Function]}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    Търси
+  </button>
+</form>
+`;

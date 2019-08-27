@@ -5,7 +5,7 @@ import AddOfferLineInfo from './AddOfferLineInfo';
 import { POST_OFFER_ERROR } from '../../actions/offerActionTypes';
 import { postOffer } from '../../actions/offerActions';
 
-const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => {
+export const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => {
 
     const {
         constructionType,
@@ -36,9 +36,11 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => 
         return message;
     }
 
-    const saveOfferHandler = () => { /// REMOVE !!!!!
+    const saveOfferHandler = () => {
         const { nextCall, lastCall } = offerVlues;
-        postOffer({ ...offerVlues, lastCall: lastCall.toISOString(), nextCall: nextCall.toISOString() });
+        postOffer({ ...offerVlues, 
+            lastCall: lastCall.toISOString(),
+            nextCall: nextCall.toISOString() });
     }
 
     return (
@@ -72,11 +74,9 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => 
                 <AddOfferLineInfo label='Последно обаждане' value={lastCall.format("MM/DD/YYYY")} />
                 <AddOfferLineInfo label='Следващо обаждане' value={nextCall.format("MM/DD/YYYY")} />
 
-
                 <div>
                     {showReqMessage()}
                 </div>
-
 
                 <div className='button__relative-wrapper'>
                     <button
@@ -91,7 +91,6 @@ const AddOfferModal = ({ isOpen, offerVlues, closeHandlerModal, postOffer }) => 
                     </button>
                 </div>
             </div>
-
         </Modal>
     )
 
