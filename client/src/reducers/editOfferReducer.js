@@ -1,7 +1,7 @@
 import { GET_CURRENT_OFFER, POST_OFFER_SUCCESS } from '../actions/offerActionTypes';
 import moment from 'moment';
 
-const formatOfferProps = (offer) => {
+export const formatOfferProps = (offer) => {
     const phoneNumber2 = offer.phoneNumbers[1] ? offer.phoneNumbers[1] : '';
     const phoneNumber3 = offer.phoneNumbers[2] ? offer.phoneNumbers[2] : '';
     const { lastCall, nextCall } = offer;

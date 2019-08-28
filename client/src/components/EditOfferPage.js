@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import OfferPropsPartOne from './OfferPropsPartOne';
 import OfferPropsPartTwo from './OfferPropsPartTwo';
 import moment from 'moment';
-import { POST_OFFER_SUCCESS, POST_OFFER_ERROR } from '../actions/offerActionTypes';
+import { EDIT_POST_OFFER_SUCCESS, EDIT_POST_OFFER_ERROR } from '../actions/offerActionTypes';
 import { postOffer, getCurrentOffer } from '../actions/offerActions';
 import EditOfferModal from './modals/EditOfferModal';
 
@@ -51,10 +51,12 @@ class EditOfferPage extends Component {
     }
 
     handleRequiestStatus = (newProps) => {
-        if (newProps.offerPostStatus === POST_OFFER_SUCCESS) { /// to be fixed
+        if (newProps.offerPostStatus === EDIT_POST_OFFER_SUCCESS) { /// to be fixed
             this.setState(() => ({ showAddOfferModal: false }));
-        } else if (newProps.offerPostStatus === POST_OFFER_ERROR) {
-            this.setState(() => ({ offerPostStatus: POST_OFFER_ERROR }));
+        } else if (newProps.offerPostStatus === EDIT_POST_OFFER_ERROR) {
+            this.setState(() => ({ 
+                offerPostStatus: EDIT_POST_OFFER_ERROR 
+            }));
         }
     }
 
